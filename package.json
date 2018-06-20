@@ -1,7 +1,7 @@
 {
   "name": "vue-admin",
   "version": "1.0.0",
-  "description": "vue+vuex+iView+es6@7",
+  "description": "This is the test of a Vue backend system vue+vuex+iView+es6@7",
   "author": "W",
   "private": true,
   "scripts": {
@@ -10,12 +10,18 @@
     "unit": "jest --config test/unit/jest.conf.js --coverage",
     "e2e": "node test/e2e/runner.js",
     "test": "npm run unit && npm run e2e",
-    "build": "node build/build.js"
+    "build": "node build/build.js",
+    "analyz": "set NODE_ENV=production && set npm_config_report=true && npm run build"
   },
   "dependencies": {
+    "echarts": "^4.1.0",
+    "es6-promise": "^4.2.4",
     "iview": "^2.14.1",
+    "v-charts": "^1.16.26",
     "vue": "^2.5.2",
-    "vue-router": "^3.0.1"
+    "vue-i18n": "^7.8.1",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
@@ -29,6 +35,7 @@
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
     "babel-plugin-transform-runtime": "^6.22.0",
     "babel-plugin-transform-vue-jsx": "^3.5.0",
+    "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.3.2",
     "babel-preset-stage-2": "^6.22.0",
     "babel-register": "^6.22.0",
@@ -36,7 +43,7 @@
     "chromedriver": "^2.27.2",
     "copy-webpack-plugin": "^4.0.1",
     "cross-spawn": "^5.0.1",
-    "css-loader": "^0.28.0",
+    "css-loader": "^0.28.11",
     "extract-text-webpack-plugin": "^3.0.0",
     "file-loader": "^1.1.4",
     "friendly-errors-webpack-plugin": "^1.6.1",
@@ -45,6 +52,7 @@
     "jest-serializer-vue": "^0.3.0",
     "nightwatch": "^0.9.12",
     "node-notifier": "^5.1.2",
+    "node-sass": "^4.9.0",
     "optimize-css-assets-webpack-plugin": "^3.2.0",
     "ora": "^1.2.0",
     "portfinder": "^1.0.13",
@@ -52,6 +60,7 @@
     "postcss-loader": "^2.0.8",
     "postcss-url": "^7.2.1",
     "rimraf": "^2.6.0",
+    "sass-loader": "^7.0.3",
     "selenium-server": "^3.0.1",
     "semver": "^5.3.0",
     "shelljs": "^0.7.6",
